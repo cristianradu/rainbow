@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Rainbow Buttons Example</title>
+
+  <link rel="stylesheet" type="text/css" href="css/rainbow.css" media="screen">
+
+  <style type="text/css">
+    body { background-color: #eaeaea; margin: 0; padding: 0; }
+    #container { width: 900px; margin: 0 auto; padding: 0 50px; background-color: #fff; border-left: 1px solid #dadada; border-right: 1px solid #dadada; }
+    footer { margin-top: 60px; padding: 25px 0; font: 14px Helvetica, Arial, sans-serif; text-align: center; border-top: 1px solid #ddd; }
+
+    .rb { width: 60px; }
+    .rb-chameleon { width: 90px; }
+
+    h1 { font: bold 72px Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; margin: 0; padding-top: 60px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    h2 { font: bold 19px/30px Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #333; margin: 10px 0; }
+    p { font: 18px Georgia, 'Times New Roman', Times, serif; }
+    p em { font: 16px Monaco, Consolas, 'Courier New', Courier, monospace; color: #df5f5f; }
+    a { text-decoration: none; }
+    a:link, a:visited { color: #5f9fdf; }
+    a:active, a:hover { color: #9f5fdf; }
+
+    header div { width: 350px; margin: 0 auto; background-color: #eee; padding: 0; font-size: 0; }
+    header span { display: inline-block; width: 50px; height: 10px; }
+    header span.R { background-color: #f0b4b4; }
+    header span.A { background-color: #f0d2b4; }
+    header span.I { background-color: #f0f0b4; }
+    header span.N { background-color: #b4f0b4; }
+    header span.B { background-color: #b4d2f0; }
+    header span.O { background-color: #d2b4f0; }
+    header span.W { background-color: #f0b4f0; }
+
+    section { margin: 30px 0; }
+    section[for="info"] { margin: 60px 0; }
+    section[for="extra"] { margin-bottom: 60px; }
+    section[for="combined"] { margin-top: 60px; }
+    section header { display: inline-block; vertical-align: top; margin-top: 5px; width: 175px; font: bold 14px/30px Helvetica, Arial, sans-serif; text-transform: uppercase; color: #333; }
+    section div { display: inline-block; vertical-align: top; margin-right: 30px; }
+    section span { display: block; margin-top: 5px; font: 10px Monaco, Consolas, 'Courier New', Courier, monospace; color: #555; }
+    section[for="grouped"] div { margin-right: -4px; }
+    section[for="colors"] div { margin-right: 10px; }
+    section[for="combined"] div { margin-right: -4px; }
+    section[for="combined"] div:last-child { margin-left: 40px; }
+    section[for="combined"] .rb { width: auto; }
+    section[for="combined"] .rb-chameleon { width: 70px; }
+  </style>
+  
+</head>
+
+<body>
+<div id="container">
+
+  <header>
+    <h1>Rainbow</h1>
+    <div>
+      <span class="R"></span>
+      <span class="A"></span>
+      <span class="I"></span>
+      <span class="N"></span>
+      <span class="B"></span>
+      <span class="O"></span>
+      <span class="W"></span>
+    </div>
+    <h2>A set of colorful CSS3 buttons</h2>
+  </header>
+
+
+  <section for="info">
+    <p>
+      Every button should have the base rainbow button class <em>.rb</em>. All the other classes add colors or presentation styles and are meant to be used together with the base. To keep the examples uncluttered, only the additional classes are listed.
+    </p>
+    <p>
+      By default the buttons do not have a fixed width, so they will expand according to their text. Feel free to set one in your own styles if you need to (as these examples have).
+    </p>
+    <p>
+      Common class names that are sometimes injected by javascript libraries do not use the rainbow prefix (rb-): selected, disabled, small.
+    </p>
+    <p>
+      When grouping buttons make sure you get rid of the default space between inline-block elements using one of <a href="http://css-tricks.com/fighting-the-space-between-inline-block-elements/">these methods</a>.
+    </p>
+  </section>
+
+
+  <section for="basic">
+    <header>Basic buttons</header>
+
+    <div>
+      <a class="rb">Button</a>
+    </div>
+
+    <div>
+      <a class="rb selected">Selected</a>
+      <span>.selected</span>
+    </div>
+
+    <div>
+      <a class="rb disabled">Disabled</a>
+      <span>.disabled</span>
+    </div>
+  </section>
+
+  <section for="grouped">
+    <header>Grouped buttons</header>
+
+    <div>
+      <a class="rb rb-left">Left</a>
+      <span>.rb-left</span>
+    </div>
+
+    <div>
+      <a class="rb rb-middle">Middle</a>
+      <span>.rb-middle</span>
+    </div>
+
+    <div>
+      <a class="rb rb-right">Right</a>
+      <span>.rb-right</span>
+    </div>
+  </section>
+
+  <section for="extra">
+    <header>Extra styles</header>
+
+    <div>
+      <a class="rb rb-chameleon rb-blue">Chameleon</a>
+      <span>.rb-chameleon<br>.rb-blue</span>
+    </div>
+
+    <div>
+      <a class="rb small">Small</a>
+      <span>.small</span>
+    </div>
+  </section>
+
+
+  <section for="colors">
+    <header>Basic colors</header>
+
+    <div>
+      <a class="rb rb-red">Red</a>
+      <span>.rb-red</span>
+    </div>
+
+    <div>
+      <a class="rb rb-orange">Orange</a>
+      <span>.rb-orange</span>
+    </div>
+
+    <div>
+      <a class="rb rb-yellow">Yellow</a>
+      <span>.rb-yellow</span>
+    </div>
+
+    <div>
+      <a class="rb rb-green">Green</a>
+      <span>.rb-green</span>
+    </div>
+
+    <div>
+      <a class="rb rb-blue">Blue</a>
+      <span>.rb-blue</span>
+    </div>
+
+    <div>
+      <a class="rb rb-purple">Purple</a>
+      <span>.rb-purple</span>
+    </div>
+
+    <div>
+      <a class="rb rb-pink">Pink</a>
+      <span>.rb-pink</span>
+    </div>
+  </section>
+
+  <section for="colors">
+    <header>Extra colors</header>
+
+    <div>
+      <a class="rb rb-lime">Lime</a>
+      <span>.rb-lime</span>
+    </div>
+
+    <div>
+      <a class="rb rb-mint">Mint</a>
+      <span>.rb-mint</span>
+    </div>
+
+    <div>
+      <a class="rb rb-aqua">Aqua</a>
+      <span>.rb-aqua</span>
+    </div>
+
+    <div>
+      <a class="rb rb-cobalt">Cobalt</a>
+      <span>.rb-cobalt</span>
+    </div>
+
+    <div>
+      <a class="rb rb-rose">Rose</a>
+      <span>.rb-rose</span>
+    </div>
+  </section>
+
+
+  <section for="combined">
+    <header>Combined styles</header>
+
+    <div>
+      <a class="rb rb-left rb-chameleon rb-green">Positive</a>
+      <span>.rb-left<br>.rb-chameleon<br>.rb-green</span>
+    </div>
+
+    <div>
+      <a class="rb rb-middle rb-chameleon rb-blue">Neutral</a>
+      <span>.rb-middle<br>.rb-chameleon<br>.rb-blue</span>
+    </div>
+
+    <div>
+      <a class="rb rb-right rb-chameleon rb-red">Negative</a>
+      <span>.rb-right<br>.rb-chameleon<br>.rb-red</span>
+    </div>
+
+    <div>
+      <a class="rb small selected rb-orange">Small &amp; Selected</a>
+      <span>.small<br>.selected<br>.rb-orange</span>
+    </div>
+  </section>
+
+
+  <footer>
+    By <a href="http://cristianradu.com">Cristian Radu</a>
+    &nbsp; &bull; &nbsp;
+    Based on <a href="http://pixify.com/blog/use-os-x-lion-to-improve-your-ui/">"Apple OS X Lion Buttons in CSS"</a> by Pixify
+    &nbsp; &bull; &nbsp;
+    License: <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons CC-BY</a>
+  </footer>
+
+</div>
+</body>
+</html>

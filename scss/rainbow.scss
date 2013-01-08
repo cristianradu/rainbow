@@ -55,7 +55,7 @@ $color-rose:     #f0b4d2;
     font-family: Helvetica, Arial, sans-serif;
     font-size: $font-size;
     font-weight: bold;
-    line-height: $button-height + 1;
+    line-height: $button-height + 2;
     text-align: center;
     text-decoration: none;
 
@@ -66,6 +66,7 @@ $color-rose:     #f0b4d2;
     @include border-radius();
     @include box-shadow();
     @include transition();
+    @include user-select;
 
     cursor: pointer;
 
@@ -98,7 +99,6 @@ $color-rose:     #f0b4d2;
     &.small {
         font-size: $font-size - 1;
         line-height: $button-height - 8;
-        padding-top: 1px;
 
         height: $button-height - 10;
     }
@@ -154,7 +154,7 @@ $color-rose:     #f0b4d2;
     $l: lightness($color);
 
     color: if($l >= 50%, #3a3a3a, #ebebeb);
-    text-shadow: 0 1px 0 if($l >= 50%, #eaeaea, #000);
+    text-shadow: 0 1px 0 if($l >= 50%, #eaeaea, #0a0a0a);
 
     @include background-gradient($color);
 
@@ -168,14 +168,12 @@ $color-rose:     #f0b4d2;
     }
 
     &:hover {
-    	color: if($l >= 50%, #282828, #fff);
+    	color: if($l >= 50%, #0a0a0a, #fff);
+	    text-shadow: 0 1px 0 if($l >= 50%, #fafafa, #0a0a0a);
 
         @include background-gradient($color + #0e0e0e);
 
         border: 1px solid #333;
-    }
-    &.rb-chameleon:hover {
-        text-shadow: 0 1px 0 #c1c1c1;
     }
     
     &:active,

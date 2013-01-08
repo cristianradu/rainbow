@@ -24,7 +24,7 @@
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
-  line-height: 36px;
+  line-height: 37px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -42,6 +42,12 @@
   -moz-transition: border 0.218s;
   -o-transition: border-color 0.218s;
   transition: border-color 0.218s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer; }
   .rb:hover, .rb-left:hover, .rb-middle:hover, .rb-right:hover {
     color: #282828;
@@ -70,7 +76,6 @@
   .rb.small, .small.rb-left, .small.rb-middle, .small.rb-right {
     font-size: 11px;
     line-height: 27px;
-    padding-top: 1px;
     height: 25px; }
 
 .rb-left {
@@ -137,7 +142,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-red:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #fec2c2;
     background: -webkit-linear-gradient(top, #ffc9c9, #dfa3a3);
     background: -moz-linear-gradient(top, #ffc9c9, #dfa3a3);
@@ -145,8 +151,6 @@
     background: -o-linear-gradient(top, #ffc9c9, #dfa3a3);
     background: linear-gradient(top, #ffc9c9, #dfa3a3);
     border: 1px solid #333; }
-  .rb-red.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-red:active, .rb-red.selected {
     background: #d09494;
     background: -webkit-gradient(linear, left top, left bottom, from(#a86c6c), color-stop(15%, #c68a8a), to(#d89c9c));
@@ -179,7 +183,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-orange:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #fee0c2;
     background: -webkit-linear-gradient(top, #ffe7c9, #dfc1a3);
     background: -moz-linear-gradient(top, #ffe7c9, #dfc1a3);
@@ -187,8 +192,6 @@
     background: -o-linear-gradient(top, #ffe7c9, #dfc1a3);
     background: linear-gradient(top, #ffe7c9, #dfc1a3);
     border: 1px solid #333; }
-  .rb-orange.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-orange:active, .rb-orange.selected {
     background: #d0b294;
     background: -webkit-gradient(linear, left top, left bottom, from(#a88a6c), color-stop(15%, #c6a88a), to(#d8ba9c));
@@ -221,7 +224,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-yellow:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #fefec2;
     background: -webkit-linear-gradient(top, #ffffc9, #dfdfa3);
     background: -moz-linear-gradient(top, #ffffc9, #dfdfa3);
@@ -229,8 +233,6 @@
     background: -o-linear-gradient(top, #ffffc9, #dfdfa3);
     background: linear-gradient(top, #ffffc9, #dfdfa3);
     border: 1px solid #333; }
-  .rb-yellow.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-yellow:active, .rb-yellow.selected {
     background: #d0d094;
     background: -webkit-gradient(linear, left top, left bottom, from(#a8a86c), color-stop(15%, #c6c68a), to(#d8d89c));
@@ -263,7 +265,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-green:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #c2fec2;
     background: -webkit-linear-gradient(top, #c9ffc9, #a3dfa3);
     background: -moz-linear-gradient(top, #c9ffc9, #a3dfa3);
@@ -271,8 +274,6 @@
     background: -o-linear-gradient(top, #c9ffc9, #a3dfa3);
     background: linear-gradient(top, #c9ffc9, #a3dfa3);
     border: 1px solid #333; }
-  .rb-green.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-green:active, .rb-green.selected {
     background: #94d094;
     background: -webkit-gradient(linear, left top, left bottom, from(#6ca86c), color-stop(15%, #8ac68a), to(#9cd89c));
@@ -305,7 +306,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-blue:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #c2e0fe;
     background: -webkit-linear-gradient(top, #c9e7ff, #a3c1df);
     background: -moz-linear-gradient(top, #c9e7ff, #a3c1df);
@@ -313,8 +315,6 @@
     background: -o-linear-gradient(top, #c9e7ff, #a3c1df);
     background: linear-gradient(top, #c9e7ff, #a3c1df);
     border: 1px solid #333; }
-  .rb-blue.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-blue:active, .rb-blue.selected {
     background: #94b2d0;
     background: -webkit-gradient(linear, left top, left bottom, from(#6c8aa8), color-stop(15%, #8aa8c6), to(#9cbad8));
@@ -347,7 +347,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-purple:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #e0c2fe;
     background: -webkit-linear-gradient(top, #e7c9ff, #c1a3df);
     background: -moz-linear-gradient(top, #e7c9ff, #c1a3df);
@@ -355,8 +356,6 @@
     background: -o-linear-gradient(top, #e7c9ff, #c1a3df);
     background: linear-gradient(top, #e7c9ff, #c1a3df);
     border: 1px solid #333; }
-  .rb-purple.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-purple:active, .rb-purple.selected {
     background: #b294d0;
     background: -webkit-gradient(linear, left top, left bottom, from(#8a6ca8), color-stop(15%, #a88ac6), to(#ba9cd8));
@@ -389,7 +388,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-pink:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #fec2fe;
     background: -webkit-linear-gradient(top, #ffc9ff, #dfa3df);
     background: -moz-linear-gradient(top, #ffc9ff, #dfa3df);
@@ -397,8 +397,6 @@
     background: -o-linear-gradient(top, #ffc9ff, #dfa3df);
     background: linear-gradient(top, #ffc9ff, #dfa3df);
     border: 1px solid #333; }
-  .rb-pink.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-pink:active, .rb-pink.selected {
     background: #d094d0;
     background: -webkit-gradient(linear, left top, left bottom, from(#a86ca8), color-stop(15%, #c68ac6), to(#d89cd8));
@@ -431,7 +429,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-lime:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #e0fec2;
     background: -webkit-linear-gradient(top, #e7ffc9, #c1dfa3);
     background: -moz-linear-gradient(top, #e7ffc9, #c1dfa3);
@@ -439,8 +438,6 @@
     background: -o-linear-gradient(top, #e7ffc9, #c1dfa3);
     background: linear-gradient(top, #e7ffc9, #c1dfa3);
     border: 1px solid #333; }
-  .rb-lime.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-lime:active, .rb-lime.selected {
     background: #b2d094;
     background: -webkit-gradient(linear, left top, left bottom, from(#8aa86c), color-stop(15%, #a8c68a), to(#bad89c));
@@ -473,7 +470,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-mint:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #c2fee0;
     background: -webkit-linear-gradient(top, #c9ffe7, #a3dfc1);
     background: -moz-linear-gradient(top, #c9ffe7, #a3dfc1);
@@ -481,8 +479,6 @@
     background: -o-linear-gradient(top, #c9ffe7, #a3dfc1);
     background: linear-gradient(top, #c9ffe7, #a3dfc1);
     border: 1px solid #333; }
-  .rb-mint.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-mint:active, .rb-mint.selected {
     background: #94d0b2;
     background: -webkit-gradient(linear, left top, left bottom, from(#6ca88a), color-stop(15%, #8ac6a8), to(#9cd8ba));
@@ -515,7 +511,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-aqua:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #c2fefe;
     background: -webkit-linear-gradient(top, #c9ffff, #a3dfdf);
     background: -moz-linear-gradient(top, #c9ffff, #a3dfdf);
@@ -523,8 +520,6 @@
     background: -o-linear-gradient(top, #c9ffff, #a3dfdf);
     background: linear-gradient(top, #c9ffff, #a3dfdf);
     border: 1px solid #333; }
-  .rb-aqua.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-aqua:active, .rb-aqua.selected {
     background: #94d0d0;
     background: -webkit-gradient(linear, left top, left bottom, from(#6ca8a8), color-stop(15%, #8ac6c6), to(#9cd8d8));
@@ -557,7 +552,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-cobalt:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #c2c2fe;
     background: -webkit-linear-gradient(top, #c9c9ff, #a3a3df);
     background: -moz-linear-gradient(top, #c9c9ff, #a3a3df);
@@ -565,8 +561,6 @@
     background: -o-linear-gradient(top, #c9c9ff, #a3a3df);
     background: linear-gradient(top, #c9c9ff, #a3a3df);
     border: 1px solid #333; }
-  .rb-cobalt.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-cobalt:active, .rb-cobalt.selected {
     background: #9494d0;
     background: -webkit-gradient(linear, left top, left bottom, from(#6c6ca8), color-stop(15%, #8a8ac6), to(#9c9cd8));
@@ -599,7 +593,8 @@
     background: -o-linear-gradient(top, #f7f7f7, #d1d1d1);
     background: linear-gradient(top, #f7f7f7, #d1d1d1); }
   .rb-rose:hover {
-    color: #282828;
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa;
     background: #fec2e0;
     background: -webkit-linear-gradient(top, #ffc9e7, #dfa3c1);
     background: -moz-linear-gradient(top, #ffc9e7, #dfa3c1);
@@ -607,8 +602,6 @@
     background: -o-linear-gradient(top, #ffc9e7, #dfa3c1);
     background: linear-gradient(top, #ffc9e7, #dfa3c1);
     border: 1px solid #333; }
-  .rb-rose.rb-chameleon:hover {
-    text-shadow: 0 1px 0 #c1c1c1; }
   .rb-rose:active, .rb-rose.selected {
     background: #d094b2;
     background: -webkit-gradient(linear, left top, left bottom, from(#a86c8a), color-stop(15%, #c68aa8), to(#d89cba));

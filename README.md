@@ -4,7 +4,7 @@ Rainbow
 Rainbow is a set of colorful CSS3 buttons written in Sass. The button styles are based on the [Apple OS X Lion Buttons in CSS](http://pixify.com/blog/use-os-x-lion-to-improve-your-ui/) by Pixify.
 
 Basic Usage
-===========
+-----------
 
 Download the archive and uncompress it or clone the repository. For a quick, out-of-the box use, just include the compiled CSS file:
 
@@ -21,7 +21,7 @@ You get 12 colors included by default: red, orange, yellow, green, blue, purple,
 There are additional styles: selected, disabled, small and grouped buttons. Open up example.html in your browser for a showcase of all possibilities.
 
 Custom Colors
-=============
+-------------
 
 In order to add custom colors, you need to edit the source Sass file. You could also try to edit the CSS file directly, but you'd have to calculate all the background gradients yourself. Yeah, I didn't think so either.
 

@@ -145,10 +145,8 @@ $color-rose:     #f0b4d2;
 
 // the template for a colored button
 @mixin rainbow-button($color: #f0f0f0) {
-    $l: lightness($color);
-
-    color: if($l >= 50%, #3a3a3a, #ebebeb);
-    text-shadow: 0 1px 0 if($l >= 50%, #eaeaea, #0a0a0a);
+    color: #3a3a3a;
+    text-shadow: 0 1px 0 #eaeaea;
 
     @include background-gradient($color);
 
@@ -162,8 +160,8 @@ $color-rose:     #f0b4d2;
     }
 
     &:hover {
-    	color: if($l >= 50%, #0a0a0a, #fff);
-	    text-shadow: 0 1px 0 if($l >= 50%, #fafafa, #0a0a0a);
+    	color: #0a0a0a;
+	    text-shadow: 0 1px 0 #fafafa;
 
         @include background-gradient($color + #0e0e0e);
 
@@ -178,8 +176,8 @@ $color-rose:     #f0b4d2;
     }
 
     &.selected {
-    	color: if($l >= 50%, #0a0a0a, #fff);
-	    text-shadow: 0 1px 0 if($l >= 50%, #fafafa, #0a0a0a);
+    	color: #0a0a0a;
+	    text-shadow: 0 1px 0 #fafafa;
     }
 }
 

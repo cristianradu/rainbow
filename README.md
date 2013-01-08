@@ -1,7 +1,7 @@
 Rainbow
 =======
 
-Rainbow is a set of colorful CSS3 buttons written in Sass. The button styles are based on the [Apple OS X Lion Buttons in CSS](http://pixify.com/blog/use-os-x-lion-to-improve-your-ui/) by Pixify.
+Rainbow is a set of colorful CSS3 buttons written in Sass/LESS. The button styles are based on the [Apple OS X Lion Buttons in CSS](http://pixify.com/blog/use-os-x-lion-to-improve-your-ui/) by Pixify.
 
 Basic Usage
 -----------
@@ -23,7 +23,9 @@ There are additional styles: selected, disabled, small and grouped buttons. Open
 Custom Colors
 -------------
 
-In order to add custom colors, you need to edit the source Sass file. You could also try to edit the CSS file directly, but you'd have to calculate all the background gradients yourself. Yeah, I didn't think so either.
+In order to add custom colors, you need to edit one of the source files: Sass or LESS, depending which one you use in your project. You could also try to edit the CSS file directly, but you'd have to calculate all the background gradients yourself. Yeah, I didn't think so either.
+
+This example uses Sass (which I think is better), but the LESS implementation is very similar.
 
 Add your color as a variable (it'll only be used once - in the selector - but this way we keep the file clean):
 

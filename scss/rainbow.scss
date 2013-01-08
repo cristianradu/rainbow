@@ -184,8 +184,8 @@ $color-rose:     #f0b4d2;
     }
 
     &.selected {
-        color: #fff;
-        text-shadow: 0 1px 0 #000;
+    	color: if($l >= 50%, #0a0a0a, #fff);
+	    text-shadow: 0 1px 0 if($l >= 50%, #fafafa, #0a0a0a);
     }
 }
 

@@ -161,8 +161,8 @@
     background: linear-gradient(top, #a86c6c, #c68a8a 15%, #d89c9c);
     border: 1px solid #7f7f7f; }
   .rb-red.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-orange {
   color: #3a3a3a;
@@ -202,8 +202,8 @@
     background: linear-gradient(top, #a88a6c, #c6a88a 15%, #d8ba9c);
     border: 1px solid #7f7f7f; }
   .rb-orange.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-yellow {
   color: #3a3a3a;
@@ -243,8 +243,8 @@
     background: linear-gradient(top, #a8a86c, #c6c68a 15%, #d8d89c);
     border: 1px solid #7f7f7f; }
   .rb-yellow.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-green {
   color: #3a3a3a;
@@ -284,8 +284,8 @@
     background: linear-gradient(top, #6ca86c, #8ac68a 15%, #9cd89c);
     border: 1px solid #7f7f7f; }
   .rb-green.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-blue {
   color: #3a3a3a;
@@ -325,8 +325,8 @@
     background: linear-gradient(top, #6c8aa8, #8aa8c6 15%, #9cbad8);
     border: 1px solid #7f7f7f; }
   .rb-blue.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-purple {
   color: #3a3a3a;
@@ -366,8 +366,8 @@
     background: linear-gradient(top, #8a6ca8, #a88ac6 15%, #ba9cd8);
     border: 1px solid #7f7f7f; }
   .rb-purple.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-pink {
   color: #3a3a3a;
@@ -407,8 +407,8 @@
     background: linear-gradient(top, #a86ca8, #c68ac6 15%, #d89cd8);
     border: 1px solid #7f7f7f; }
   .rb-pink.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-lime {
   color: #3a3a3a;
@@ -448,8 +448,8 @@
     background: linear-gradient(top, #8aa86c, #a8c68a 15%, #bad89c);
     border: 1px solid #7f7f7f; }
   .rb-lime.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-mint {
   color: #3a3a3a;
@@ -489,8 +489,8 @@
     background: linear-gradient(top, #6ca88a, #8ac6a8 15%, #9cd8ba);
     border: 1px solid #7f7f7f; }
   .rb-mint.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-aqua {
   color: #3a3a3a;
@@ -530,8 +530,8 @@
     background: linear-gradient(top, #6ca8a8, #8ac6c6 15%, #9cd8d8);
     border: 1px solid #7f7f7f; }
   .rb-aqua.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-cobalt {
   color: #3a3a3a;
@@ -571,8 +571,8 @@
     background: linear-gradient(top, #6c6ca8, #8a8ac6 15%, #9c9cd8);
     border: 1px solid #7f7f7f; }
   .rb-cobalt.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }
 
 .rb-rose {
   color: #3a3a3a;
@@ -612,5 +612,5 @@
     background: linear-gradient(top, #a86c8a, #c68aa8 15%, #d89cba);
     border: 1px solid #7f7f7f; }
   .rb-rose.selected {
-    color: #fff;
-    text-shadow: 0 1px 0 #000; }
+    color: #0a0a0a;
+    text-shadow: 0 1px 0 #fafafa; }

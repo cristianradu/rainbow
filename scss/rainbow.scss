@@ -1,0 +1,205 @@
+/*
+** Rainbow
+** A set of colorful CSS3 buttons
+**
+** by Cristian Radu <code@cristianradu.com>
+**
+**
+** Based on "Apple OS X Lion Buttons in CSS" by Pixify
+** http://pixify.com/blog/use-os-x-lion-to-improve-your-ui/
+**
+** License: Creative Commons CC-BY
+** http://creativecommons.org/licenses/by/3.0/
+*/
+
+@import 'mixins';
+
+
+// button and font size
+$button-height: 35px;
+$font-size:     12px;
+
+// basic colors
+$color-red:      #f0b4b4;
+$color-orange:   #f0d2b4;
+$color-yellow:   #f0f0b4;
+$color-green:    #b4f0b4;
+$color-blue:     #b4d2f0;
+$color-purple:   #d2b4f0;
+$color-pink:     #f0b4f0;
+
+// bonus colors
+$color-lime:     #d2f0b4;
+$color-mint:     #b4f0d2;
+$color-aqua:     #b4f0f0;
+$color-cobalt:   #b4b4f0;
+$color-rose:     #f0b4d2;
+
+// If you need to add new colors, remember to create the selectors for them
+// (at the bottom of this file).
+//
+// once Sass will support maps (in the near future), I'll switch to lists and
+// the selector generation will happen automatically.
+
+// -----------------------------------------------------------------------------
+
+// the default button
+.rb {
+    color: #484848;
+    text-shadow: 0 1px 0 #fff;
+
+    @include background-gradient(#f0f0f0);
+
+    border: 1px solid #7f7f7f;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $font-size;
+    font-weight: bold;
+    line-height: $button-height + 1;
+    text-decoration: none;
+
+    display: block;
+    float: left;
+    height: $button-height;
+    padding: 0 10px;
+
+    @include border-radius();
+    @include box-shadow();
+    @include transition();
+
+    cursor: pointer;
+
+    &:hover {
+        color: #282828;
+
+        @include background-gradient(#fefefe);
+
+        border: 1px solid #333;
+    }
+    
+    &:active,
+    &.selected {
+        @include background-stop-gradient(#d0d0d0);
+
+        border: 1px solid #7f7f7f;
+    }
+
+    &.disabled {
+        color: #b4b4b4;
+        background: #f0f0f0;
+
+        border: 1px solid #b4b4b4;
+        
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    &.small {
+        font-size: $font-size - 1;
+        line-height: $button-height - 8;
+        padding-top: 1px;
+
+        height: $button-height - 10;
+    }
+    &.auto-size {
+        width: auto !important;
+    }
+}
+
+
+// grouped buttons
+.rb-left {
+	@extend .rb;
+
+    border-right: solid 1px #b0b0b0;
+
+    @include border-corner-radius(4px, 0, 4px, 0);
+}
+.rb-middle {
+	@extend .rb;
+
+    border-left: solid 1px rgba(255, 255, 255, 0);
+    border-right: solid 1px #b0b0b0;
+
+    @include border-radius(0);
+
+    &:hover {
+        border-left: solid 1px #333333;
+    }
+
+    &:active,
+    &.selected {
+        border-left: solid 1px #7f7f7f;
+    }
+}
+.rb-right {
+	@extend .rb;
+
+    border-left: solid 1px rgba(255, 255, 255, 0);
+
+    @include border-corner-radius(0, 4px, 0, 4px);
+
+    &:hover {
+        border-left: solid 1px #333333;
+    }
+
+    &:active,
+    &.selected {
+        border-left: solid 1px #7f7f7f;
+    }
+}
+
+// -----------------------------------------------------------------------------
+
+// the template for a colored button
+@mixin rainbow-button($color: #f0f0f0) {
+    @include background-gradient($color);
+
+    // chameleon style looks like a default button on its normal state
+    // but becomes colored on hover and active
+    &.chameleon {
+        color: #484848;
+        text-shadow: 0 1px 0 #fff;
+
+        @include background-gradient(#f0f0f0);
+    }
+
+    &:hover {
+        @include background-gradient($color + #0e0e0e);
+
+        border: 1px solid #333;
+    }
+    &.chameleon:hover {
+        text-shadow: 0 1px 0 #c1c1c1;
+    }
+    
+    &:active,
+    &.selected {
+        @include background-stop-gradient($color - #202020);
+
+        border: 1px solid #7f7f7f;
+    }
+
+    &.selected {
+        color: #fff;
+        text-shadow: 0 1px 0 #000;
+    }
+}
+
+// -----------------------------------------------------------------------------
+
+// the selectors for each colored button
+.rb-red    { @include rainbow-button($color-red); }
+.rb-orange { @include rainbow-button($color-orange); }
+.rb-yellow { @include rainbow-button($color-yellow); }
+.rb-green  { @include rainbow-button($color-green); }
+.rb-blue   { @include rainbow-button($color-blue); }
+.rb-purple { @include rainbow-button($color-purple); }
+.rb-pink   { @include rainbow-button($color-pink); }
+
+.rb-lime   { @include rainbow-button($color-lime); }
+.rb-mint   { @include rainbow-button($color-mint); }
+.rb-aqua   { @include rainbow-button($color-aqua); }
+.rb-cobalt { @include rainbow-button($color-cobalt); }
+.rb-rose   { @include rainbow-button($color-rose); }

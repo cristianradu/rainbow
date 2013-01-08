@@ -11,7 +11,7 @@
 ** License: Creative Commons CC-BY
 ** http://creativecommons.org/licenses/by/3.0/
 */
-.rb, .rb-left, .rb-middle, .rb-right {
+.rb {
   color: #484848;
   text-shadow: 0 1px 0 #fff;
   background: #f0f0f0;
@@ -49,7 +49,7 @@
   -ms-user-select: none;
   user-select: none;
   cursor: pointer; }
-  .rb:hover, .rb-left:hover, .rb-middle:hover, .rb-right:hover {
+  .rb:hover {
     color: #282828;
     background: #fefefe;
     background: -webkit-linear-gradient(top, white, #dfdfdf);
@@ -58,7 +58,7 @@
     background: -o-linear-gradient(top, white, #dfdfdf);
     background: linear-gradient(top, white, #dfdfdf);
     border: 1px solid #333; }
-  .rb:active, .rb-left:active, .rb-middle:active, .rb-right:active, .rb.selected, .selected.rb-left, .selected.rb-middle, .selected.rb-right {
+  .rb:active, .rb.selected {
     background: #d0d0d0;
     background: -webkit-gradient(linear, left top, left bottom, from(#a8a8a8), color-stop(15%, #c6c6c6), to(#d8d8d8));
     background: -webkit-linear-gradient(top, #a8a8a8, #c6c6c6 15%, #d8d8d8);
@@ -67,13 +67,13 @@
     background: -o-linear-gradient(top, #a8a8a8, #c6c6c6 15%, #d8d8d8);
     background: linear-gradient(top, #a8a8a8, #c6c6c6 15%, #d8d8d8);
     border: 1px solid #7f7f7f; }
-  .rb.disabled, .disabled.rb-left, .disabled.rb-middle, .disabled.rb-right {
+  .rb.disabled {
     color: #b4b4b4;
     background: #f0f0f0;
     border: 1px solid #b4b4b4; }
-    .rb.disabled:hover, .disabled.rb-left:hover, .disabled.rb-middle:hover, .disabled.rb-right:hover {
+    .rb.disabled:hover {
       cursor: default; }
-  .rb.small, .small.rb-left, .small.rb-middle, .small.rb-right {
+  .rb.small {
     font-size: 11px;
     line-height: 27px;
     height: 25px; }

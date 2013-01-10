@@ -3,7 +3,7 @@ Rainbow
 
 Rainbow is a CSS library for pretty, colorful buttons. It comes with sources written in both Sass and LESS for easy customization. No dependencies on any other third party library.
 
-To see the buttons, open example.html in your browser or check out [the demo page](http://projects.cristanradu.com/rainbow/).
+To see the buttons, open example.html in your browser or check out [the demo page](http://projects.cristianradu.com/rainbow/).
 
 Rainbow is licensed [Creative Commons CC-BY](http://creativecommons.org/licenses/by/3.0/), which means you can freely share and/or modify it for both personal and commercial applications. The only requirement is that you keep the original attribution (the comment at the top of the CSS file).
 

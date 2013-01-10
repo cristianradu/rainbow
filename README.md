@@ -31,13 +31,13 @@ Custom Colors
 
 If you'd like more customization - including defining your own colors - then download the full archive. You'll find inside both Sass and LESS source files that can be imported into your own stylesheets. Use whichever one you prefer.
 
-1. In your project's Sass/LESS stylesheet, add the following import at the top:
+In your project's Sass/LESS stylesheet, add the following import at the top:
 
     @import 'rainbow';
 
 Since you're importing Rainbow into your own stylesheet, you no longer need to include its CSS file in your header (as in the basic use example above). Get rid of it.
 
-2. Define your own selector and call the rainbow-button mixin with your custom color:
+Define your own selector and call the rainbow-button mixin with your custom color:
 
     // Sass
     .rb-lightblue { @include rainbow-button(#e6eaf6); }
@@ -45,7 +45,7 @@ Since you're importing Rainbow into your own stylesheet, you no longer need to i
     // LESS
     .rb-lightblue { .rainbow-button(#e6eaf6); }
 
-3. Build the stylesheet and you're good to go. Now you can use your custom color from the compiled CSS:
+Build the stylesheet and you're good to go. Now you can use your custom color from the compiled CSS:
 
     <a class="rb rb-lightblue">Custom Button</a>
 

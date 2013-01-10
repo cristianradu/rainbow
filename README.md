@@ -13,7 +13,7 @@ The basic button style is based on the [Apple OS X Lion Buttons in CSS](http://p
 Basic Usage
 -----------
 
-If you want to use the library as-is, with just the default buttons (showcased on [the demo page](http://projects.cristanradu.com/rainbow/) then all you need is the CSS file. Include it in your header: 
+If you want to use the library as-is, with just the default buttons (showcased on [the demo page](http://projects.cristianradu.com/rainbow/) then all you need is the CSS file. Include it in your header: 
 
     <link rel="stylesheet" type="text/css" href="css/rainbow.css" media="screen">
 

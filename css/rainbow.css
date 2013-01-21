@@ -19,13 +19,17 @@
 .rb.disabled:hover { cursor: default; }
 .rb.small { font-size: 0.6875rem; line-height: 2.25em; padding: 0.2em 1.2em 0 1.2em; }
 
+/* 
+** remember to remove the whitespace between them using one of the methods listed here:
+** http://css-tricks.com/fighting-the-space-between-inline-block-elements/
+*/
 .rb-left { border-right: solid 1px #b0b0b0; -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; border-top-left-radius: 4px; -webkit-border-top-right-radius: 0; -moz-border-radius-topright: 0; border-top-right-radius: 0; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-bottomleft: 4px; border-bottom-left-radius: 4px; -webkit-border-bottom-right-radius: 0; -moz-border-radius-bottomright: 0; border-bottom-right-radius: 0; }
 
-.rb-middle { border-left: solid 1px rgba(255, 255, 255, 0); border-right: solid 1px #b0b0b0; margin-left: -0.25rem; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+.rb-middle { border-left: solid 1px rgba(255, 255, 255, 0); border-right: solid 1px #b0b0b0; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
 .rb-middle:hover { border-left: solid 1px #333333; }
 .rb-middle:active, .rb-middle.selected { border-left: solid 1px #7f7f7f; }
 
-.rb-right { border-left: solid 1px rgba(255, 255, 255, 0); margin-left: -0.25rem; -webkit-border-top-left-radius: 0; -moz-border-radius-topleft: 0; border-top-left-radius: 0; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px; border-top-right-radius: 4px; -webkit-border-bottom-left-radius: 0; -moz-border-radius-bottomleft: 0; border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 4px; -moz-border-radius-bottomright: 4px; border-bottom-right-radius: 4px; }
+.rb-right { border-left: solid 1px rgba(255, 255, 255, 0); -webkit-border-top-left-radius: 0; -moz-border-radius-topleft: 0; border-top-left-radius: 0; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px; border-top-right-radius: 4px; -webkit-border-bottom-left-radius: 0; -moz-border-radius-bottomleft: 0; border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 4px; -moz-border-radius-bottomright: 4px; border-bottom-right-radius: 4px; }
 .rb-right:hover { border-left: solid 1px #333333; }
 .rb-right:active, .rb-right.selected { border-left: solid 1px #7f7f7f; }
 

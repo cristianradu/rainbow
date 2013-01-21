@@ -98,6 +98,10 @@
 
 
 // grouped buttons
+/* 
+** remember to remove the whitespace between them using one of the methods listed here:
+** http://css-tricks.com/fighting-the-space-between-inline-block-elements/
+*/
 .rb-left {
     border-right: solid 1px #b0b0b0;
 
@@ -106,8 +110,6 @@
 .rb-middle {
     border-left: solid 1px rgba(255, 255, 255, 0);
     border-right: solid 1px #b0b0b0;
-
-    margin-left: -0.25rem; // 4px
 
     .border-radius(0);
 
@@ -122,8 +124,6 @@
 }
 .rb-right {
     border-left: solid 1px rgba(255, 255, 255, 0);
-
-    margin-left: -0.25rem; // 4px
 
     .border-corner-radius(0, 4px, 0, 4px);
 

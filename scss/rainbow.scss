@@ -51,7 +51,7 @@ $color-rose:     #f0b4d2;
     text-decoration: none;
 
     display: inline-block;
-    padding: 0.15em 0.75em 0; // 2px, 9px
+    padding: 0.15em 1.5em 0; // 2px, 18px
 
     @include border-radius();
     @include box-shadow();

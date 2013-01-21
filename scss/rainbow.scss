@@ -44,14 +44,14 @@ $color-rose:     #f0b4d2;
     border: 1px solid #7f7f7f;
 
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 0.75em; // 12px
+    font-size: 0.75rem; // 12px
     font-weight: bold;
     line-height: 3em; // 36px
     text-align: center;
     text-decoration: none;
 
     display: inline-block;
-    padding: 0.125em 0.625em 0 0.625em; // 2px, 10px
+    padding: 0.15em 0.75em 0; // 2px, 9px
 
     @include border-radius();
     @include box-shadow();
@@ -89,7 +89,7 @@ $color-rose:     #f0b4d2;
     }
 
     &.small {
-        font-size: 0.6875em; // 11px
+        font-size: 0.6875rem; // 11px
         line-height: 2.25em; // 24.75px
 
         padding: 0.2em 1.2em 0 1.2em; // 2.2px, 13px

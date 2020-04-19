@@ -17,11 +17,9 @@
     #container { width: 900px; min-height: 100%; margin: 0 auto; padding: 0 50px; background-color: #fff; border-left: 1px solid #dadada; border-right: 1px solid #dadada; }
     footer { margin-top: 60px; padding: 25px 0; font: 14px Helvetica, Arial, sans-serif; text-align: center; border-top: 1px solid #ddd; }
 
-    .rb { width: 40px; }
-    .rb-chameleon { width: 70px; }
-
     h1 { font: bold 72px Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; margin: 0; padding-top: 60px; }
-    h2 { font: bold 19px/30px Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #333; margin: 10px 0; }
+    h2 { font: bold 19px/30px Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #333; margin: 10px 0 5px 0; }
+    h4 { font: bold 12px Helvetica, Arial, sans-serif; text-transform: uppercase; text-align: center; color: #bbb; margin: 0; }
     p { font: 18px Georgia, 'Times New Roman', Times, serif; }
     p em { font: 16px Monaco, Consolas, 'Courier New', Courier, monospace; color: #df5f5f; }
     a { text-decoration: none; }
@@ -45,14 +43,14 @@
     section header { display: inline-block; vertical-align: top; margin-top: 5px; width: 175px; font: bold 14px/30px Helvetica, Arial, sans-serif; text-transform: uppercase; color: #333; }
     section div { display: inline-block; vertical-align: top; margin-right: 30px; }
     section span { display: block; margin-top: 5px; font: 10px Monaco, Consolas, 'Courier New', Courier, monospace; color: #555; }
-    section[for="grouped"] div { margin-right: 0; }
+    section[for="grouped"] span { margin-left: 180px; }
     section[for="colors"] div { margin-right: 10px; }
     section[for="combined"] div { margin-right: 0; }
     section[for="combined"] div:last-child { margin-left: 40px; }
     section[for="combined"] .rb { width: auto; }
     section[for="combined"] .rb-chameleon { width: 70px; }
   </style>
-  
+
 </head>
 
 <body>
@@ -70,6 +68,7 @@
       <span class="W"></span>
     </div>
     <h2>A set of colorful CSS3 buttons</h2>
+    <h4>version 2.0</h4>
   </header>
 
 
@@ -78,7 +77,7 @@
       Below you'll find all the button styles and colors included in the library. Every button should have the base rainbow button class <em>.rb</em>. All the other classes add colors or presentation styles and are meant to be used together with the base. To keep the examples uncluttered, only the additional classes are listed.
     </p>
     <p>
-      By default the buttons do not have a fixed width, so they will expand according to their text. Feel free to set one in your own styles if you need to (as these examples have).
+      By default the buttons do not have a fixed width, so they will expand according to their text. Feel free to set one in your own styles if you need to.
     </p>
     <p>
       There are a few common class names that are sometimes injected by javascript libraries which do not use the rainbow prefix (rb-): selected, disabled, small.
@@ -107,16 +106,12 @@
   <section for="grouped">
     <header>Grouped buttons</header>
 
-    <div>
-      <a class="rb rb-left">Left</a>
-      <span>.rb-left</span>
-    </div><div>
-      <a class="rb rb-middle">Middle</a>
-      <span>.rb-middle</span>
-    </div><div>
-      <a class="rb rb-right">Right</a>
-      <span>.rb-right</span>
+    <div class="rb-group">
+      <a class="rb">Left</a>
+      <a class="rb">Middle</a>
+      <a class="rb">Right</a>
     </div>
+    <span>.rb-group (on container)</span>
   </section>
 
   <section for="extra">
@@ -203,33 +198,12 @@
   </section>
 
 
-  <section for="combined">
-    <header>Combined styles</header>
-
-    <div>
-      <a class="rb small rb-left rb-chameleon rb-green">Positive</a>
-      <span>.rb-left<br>.rb-chameleon<br>.rb-green</span>
-    </div><div>
-      <a class="rb small rb-middle rb-chameleon rb-blue">Neutral</a>
-      <span>.rb-middle<br>.rb-chameleon<br>.rb-blue</span>
-    </div><div>
-      <a class="rb small rb-right rb-chameleon rb-red">Negative</a>
-      <span>.rb-right<br>.rb-chameleon<br>.rb-red</span>
-    </div>
-
-    <div>
-      <a class="rb small selected rb-orange">Small &amp; Selected</a>
-      <span>.small<br>.selected<br>.rb-orange</span>
-    </div>
-  </section>
-
-
   <footer>
     By <a href="http://cristianradu.com">Cristian Radu</a>
     &nbsp; &bull; &nbsp;
-    Based on <a href="http://pixify.com/blog/use-os-x-lion-to-improve-your-ui/">Apple OS X Lion Buttons in CSS</a> by Pixify
+    <a href="https://projects.cristianradu.com/rainbow/">Project homepage</a>
     &nbsp; &bull; &nbsp;
-    License: <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons CC-BY</a>
+    License: <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International (CC BY 4.0)</a>
   </footer>
 
 </div>

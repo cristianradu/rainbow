@@ -1,0 +1,25 @@
+{
+  "name": "rainbow",
+  "version": "2.0.0",
+  "description": "A set of colorful CSS3 buttons",
+  "license": "CC-BY-4.0",
+  "author": "Cristian Radu <code@cristianradu.com>",
+  "homepage": "https://projects.cristianradu.com/rainbow/",
+  "main": "css/rainbow.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cristianradu@github.com/cristianradu/rainbow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cristianradu/rainbow/issues"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "buttons",
+    "rainbow"
+  ]
+}

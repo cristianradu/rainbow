@@ -1,7 +1,7 @@
 Rainbow
 =======
 
-Rainbow is a CSS library for pretty, colorful buttons. It comes with sources written in both Sass and LESS for easy customization. No dependencies on any other third party library.
+Rainbow is a CSS library for pretty, colorful buttons. It comes with sources written in Sass for easy customization. No dependencies on any other third party library.
 
 To see the buttons, open example.html in your browser or check out [the demo page](http://projects.cristianradu.com/rainbow/).
 
